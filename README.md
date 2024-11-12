@@ -58,69 +58,25 @@ O recurso compartilhado neste sistema é representado pelo contador e contador d
    python cliente.py
    ```
 
-   O script 
-
-cliente.py
-
- iniciará múltiplos clientes que solicitarão o token ao servidor.
+   O script cliente.py iniciará múltiplos clientes que solicitarão o token ao servidor.
 
 ## Estrutura do Código
 
 ### Servidor
 
-- 
-
-iniciar_servidor
-
-: Inicia o servidor e aceita conexões dos clientes.
-- 
-
-gerenciar_token
-
-: Gerencia as solicitações de token dos clientes.
-- 
-
-enviar_token
-
-: Envia o token para o próximo cliente na fila.
-- 
-
-monitorar_teclas
-
-: Monitora teclas para fechar conexões ou reiniciar o servidor.
-- 
-
-fechar_conexoes
-
-: Fecha todas as conexões ativas.
-- 
-
-reiniciar_servidor
-
-: Reinicia o servidor.
+- iniciar_servidor: Inicia o servidor e aceita conexões dos clientes.
+- gerenciar_token: Gerencia as solicitações de token dos clientes.
+- enviar_token: Envia o token para o próximo cliente na fila.
+- monitorar_teclas: Monitora teclas para fechar conexões ou reiniciar o servidor.
+- fechar_conexoes: Fecha todas as conexões ativas.
+- reiniciar_servidor: Reinicia o servidor.
 
 ### Cliente
 
-- 
-
-solicitar_token
-
-: Solicita o token ao servidor.
-- 
-
-atualizar_status
-
-: Atualiza o status do cliente.
-- 
-
-atualizar_tela
-
-: Atualiza a tela com o status dos clientes.
-- 
-
-iniciar_cliente
-
-: Inicia o cliente e cria threads para solicitar token e atualizar status.
+- solicitar_token: Solicita o token ao servidor.
+- atualizar_status: Atualiza o status do cliente.
+- atualizar_tela: Atualiza a tela com o status dos clientes.
+- iniciar_cliente: Inicia o cliente e cria threads para solicitar token e atualizar status.
 
 ## Contribuição
 
